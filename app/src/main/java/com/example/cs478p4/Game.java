@@ -29,4 +29,15 @@ public class Game extends AppCompatActivity {
             }
         }
     }
+    public void movePiece(int start, int end) {
+
+    }
+    public void addPiece(int end) {
+        //add to set
+        int col = end % 3;
+        TableRow row = (TableRow) layout.getChildAt(end/3);
+        TextView view = (TextView) row.getChildAt(col);
+
+        view.setBackgroundColor(Color.RED);
+    }
 }
