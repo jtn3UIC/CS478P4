@@ -34,6 +34,7 @@
         app:layout_constraintVertical_bias="0.725" />
 
     <TableLayout
+        android:id="@+id/board"
         android:layout_width="323dp"
         android:layout_height="459dp"
         app:layout_constraintBottom_toTopOf="@+id/status"
