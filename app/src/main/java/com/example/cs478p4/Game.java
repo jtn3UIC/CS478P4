@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Game extends AppCompatActivity {
     TableLayout layout;
-    Game() {
-        layout = (TableLayout) findViewById(R.id.board);
+    Game(TableLayout layout) {
+        this.layout = layout;//(TableLayout) findViewById(R.id.board);
     }
     public void resetBoard() {
         for (int i = 0; i < layout.getChildCount(); i++) {
@@ -24,7 +24,7 @@ public class Game extends AppCompatActivity {
                 for (int x = 0; x < row.getChildCount(); x++) {
                     TextView view = (TextView) row.getChildAt(x);
                     //view.setEnabled(false);
-                    view.setBackgroundColor(Color.red(5));
+                    view.setBackgroundColor(Color.GRAY);
                 }
             }
         }
