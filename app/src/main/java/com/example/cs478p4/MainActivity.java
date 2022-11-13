@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Game game = new Game((TableLayout) findViewById(R.id.board));
         start = (Button) findViewById(R.id.status);
-        game.addPiece(1);game.addPiece(5);game.addPiece(9);
+        game.addPiece(1,"p1");game.addPiece(5,"p2");game.addPiece(8,"p1");
+        game.movePiece(8,0,"p1");
         start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
